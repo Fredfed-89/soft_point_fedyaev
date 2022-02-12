@@ -1,0 +1,63 @@
+.header {
+  padding-top: 35px;
+
+  .logo {
+    margin-bottom: -112px;
+    transform: translate(-20%, -23%);
+  }
+
+  &__nav {
+    @include flex-h-sb;
+
+    flex-wrap: wrap;
+  }
+
+  &__list {
+    @include flex-h-sb;
+
+    align-items: center;
+    margin-left: -45px;
+    width: 100%;
+    max-width: 310px;
+  }
+
+  &__link {
+    line-height: 1.5;
+    color: var(--color-black);
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+      transition: all 0.7s ease-in;
+    }
+  }
+
+  &__btn {
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-black);
+  }
+
+  &__login {
+    margin-right: 10px;
+    padding: 15px;
+
+    &:hover {
+      border-radius: $br6;
+      color: var(--color-white);
+      background-color: var(--color-button-red);
+      transition: all 0.9s;
+    }
+  }
+
+  &__sign {
+    border-radius: $br6;
+    padding: 15px 30px;
+    color: var(--color-white);
+    background-color: var(--color-button-red);
+
+    &:hover {
+      background: linear-gradient(154.24deg, #85fed6 4.45%, #4edaac 83.73%);
+    }
+  }
+}

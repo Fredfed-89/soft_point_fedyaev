@@ -1,0 +1,44 @@
+.get {
+  background-color: var(--color-bg-green);
+
+  &__inner {
+    @include flex;
+  }
+
+  &__descr {
+    padding: 90px 0;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__download {
+    position: relative;
+    top: 15px;
+    border-radius: 6px;
+    padding: 15px 33px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-white);
+    background-color: var(--color-button-red);
+
+    &:hover {
+      background-color: var(--color-button-black);
+      transition: background 0.9s;
+    }
+  }
+
+  &__laptop {
+    margin-bottom: -38px;
+    transform: translate(10%, -15%);
+  }
+}

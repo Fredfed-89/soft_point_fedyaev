@@ -1,0 +1,36 @@
+.security {
+  margin-bottom: -100px;
+
+  &__inner {
+    @include flex-h-sb;
+
+    transform: translate(-3%, 0);
+  }
+
+  &__img {
+    width: 120%;
+    max-width: 805px;
+    transform: translate(-175px, -113px);
+  }
+
+  &__descr {
+    width: 100%;
+    max-width: 500px;
+    transform: translateX(-35px);
+  }
+
+  &__descr-title {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &--semi {
+      font-weight: 600;
+    }
+  }
+}

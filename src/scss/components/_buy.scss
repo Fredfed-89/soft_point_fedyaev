@@ -1,0 +1,112 @@
+.buy {
+  &__ellipse-left {
+    z-index: -10;
+    border-radius: 80px;
+    box-shadow: -4px 1px 80px rgba(246, 216, 135, 0.7);
+    transform: translate(-51px, 503px);
+  }
+
+  &__list {
+    @include flex-h-sb;
+  }
+
+  &__item {
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: $br15;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    background-color: var(--color-white);
+
+    &:hover {
+      box-shadow: 0 20px 100px rgba(2, 18, 6, 0.15);
+      transition: box-shadow 0.7s;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 35px;
+    padding-top: 35px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.7;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  &__item-price {
+    display: block;
+    margin-bottom: 38px;
+    font-weight: 600;
+    font-size: 43px;
+    line-height: 1;
+  }
+
+  &__item-descr {
+    @include flex-h-sb;
+
+    border-bottom: 1px solid rgba(1, 18, 18, 0.1);
+    padding: 22px 0;
+    padding-left: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    background-position: 7% 50%;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+
+    &:nth-last-child(1) {
+      margin-bottom: 40px;
+    }
+
+    &--check {
+      background-image: url("../img/check.svg");
+      opacity: 1;
+    }
+  }
+
+  .descr-line {
+    text-decoration-line: line-through;
+    color: rgba(2, 18, 6, 0.5);
+  }
+
+  &__item-yes {
+    padding-right: 30px;
+  }
+
+  .border-top {
+    border-top: 1px solid rgba(1, 18, 18, 0.1);
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    border: 2px solid rgba(244, 69, 69, 0.2);
+    border-radius: $br6;
+    padding: 13px 75px;
+    width: 100%;
+    max-width: 240px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #f44545;
+    opacity: 0.9;
+
+    &:hover {
+      color: var(--color-white);
+      background-color: var(--color-button-red);
+      transition: background-color 0.8s;
+    }
+  }
+
+  &__ellipse-right {
+    z-index: -10;
+    border-radius: 75px;
+    width: 139px;
+    height: 139px;
+    box-shadow: 0 4px 70px rgba(155, 215, 195, 0.8);
+    transform: translate(779%, -355%);
+  }
+}

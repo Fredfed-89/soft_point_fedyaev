@@ -1,0 +1,134 @@
+.plan {
+  text-align: center;
+
+  &__descr {
+    margin: 0 auto 35px;
+    width: 100%;
+    max-width: 755px;
+    line-height: 1.7;
+  }
+
+  &__choice {
+    @include flex-h-sb;
+
+    margin: 0 auto 17px;
+    width: 100%;
+    max-width: 270px;
+    color: #4e5951;
+  }
+
+  &__monthly {
+    font-size: 20px;
+    line-height: 0.8;
+  }
+
+  &__choice-checkbox {
+    position: relative;
+    width: 58px;
+    height: 29px;
+  }
+
+  &__choice-input {
+    display: none;
+  }
+
+  &__slider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 6px;
+    background-color: #43ddaa;
+    transform: translateY(-5px);
+    transition: 0.4s;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 33px;
+      bottom: 6px;
+      border-radius: 3px;
+      width: 17px;
+      height: 16px;
+      background-color: var(--color-white);
+      transition: 0.4s;
+    }
+  }
+
+  &__choice-input:checked + .plan__slider {
+    background-color: var(--color-button-black);
+  }
+
+  &__choice-input:checked + .plan__slider::before {
+    transform: translateX(-25px);
+  }
+
+  &__quarterly {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.8;
+  }
+
+  &__save {
+    display: inline-block;
+    margin-bottom: 70px;
+    padding: 15px 55px 0 0;
+    width: 100%;
+    max-width: 191px;
+    font-weight: 600;
+    line-height: 0.8;
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    &--arrow {
+      background-image: url("../img/arrow-up.svg");
+    }
+  }
+
+  &__price-price {
+    color: var(--color-white);
+
+    &::before {
+      content: "$130";
+      position: absolute;
+      width: 83px;
+      height: 45px;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 2;
+      background-image: url("../img/plan-price.svg");
+      transform: translate(-42px, -47px);
+    }
+  }
+
+  &__price-input {
+    appearance: none;
+    margin-bottom: 0;
+    width: 1170px;
+
+    input[type=range] {
+      border-radius: 37px;
+      box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+    }
+  }
+
+  &__price-input[type=range]::-webkit-slider-runnable-track {
+    border-radius: 10px;
+    height: 11px;
+    background: linear-gradient(154.24deg, #85fed6 4.45%, #4edaac 83.73%);
+  }
+
+  &__price-input[type=range]::-webkit-slider-thumb {
+    margin-top: -5px;
+    border: 3px solid var(--color-white);
+    border-radius: 10px;
+    width: 21px;
+    height: 21px;
+    box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+    background: linear-gradient(154.24deg, #85fed6 4.45%, #4edaac 83.73%);
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+}

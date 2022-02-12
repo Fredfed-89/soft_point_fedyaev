@@ -1,0 +1,40 @@
+.discover {
+  &__inner {
+    @include flex;
+  }
+
+  &__descr {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 450px;
+    font-weight: 500;
+  }
+
+  &__list-item {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    &--check {
+      background-image: url("../img/check.svg");
+    }
+  }
+
+  &__images {
+    @include flex;
+
+    width: 100%;
+    max-width: 600px;
+  }
+
+  &__img {
+    max-width: 805px;
+    transform: translateY(-35px);
+  }
+}

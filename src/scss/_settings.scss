@@ -1,0 +1,49 @@
+
+body {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.bottom {
+  margin-bottom: 110px;
+}
+
+.title {
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 1.5;
+}
+
+.site-container {
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1320px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}

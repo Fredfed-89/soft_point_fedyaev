@@ -1,0 +1,58 @@
+.footer {
+  &__back {
+    background-color: var(--color-bg-green);
+  }
+
+  &__logo-inner {
+    display: inline;
+  }
+
+  &__inner {
+    @include flex-h-sb;
+  }
+
+  .logo-img {
+    margin: 0 0 -60px -71px;
+  }
+
+  &__descr {
+    display: block;
+    margin-right: 50px;
+    padding-bottom: 50px;
+    width: 245px;
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.5;
+    opacity: 0.7;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: var(--color-black);
+    opacity: 0.7;
+
+    &:hover {
+      color: #43ddaa;
+      transition: color 0.7s ease-out;
+    }
+  }
+
+  &__phone-link {
+    font-size: 16px;
+    color: var(--color-black);
+    opacity: 0.7;
+  }
+
+  &__address {
+    font-style: normal;
+    font-size: 16px;
+    opacity: 0.7;
+  }
+}
